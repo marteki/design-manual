@@ -8,8 +8,6 @@
 .content {
   margin-top: 0;
   padding: 2em 0;
-  /* only here to keep footer sticky */
-  overflow: auto;
   .grid_column(12);
 
   .content-25,
@@ -49,8 +47,6 @@ figure {
   .content {
     // Make room for the fixed header
     .grid_column(9);
-    overflow: hidden; // Added so that .nested-col-group mixin within isn't too wide.
-                      // This shouldn't be necessary, though... need to revisit.
 
     /* Inner content - nested grid inside content */
     .content-25 {
@@ -175,7 +171,7 @@ figure {
 
     li {
 
-      .webfont-demi();
+      .u-webfont-demi();
       font-size: 1.125em;
       display: block;
       float: left;
@@ -201,7 +197,7 @@ figure {
   }
 
   .lead-in {
-    .webfont-regular();
+    .u-webfont-regular();
     font-size: 1.125em;
   }
 
@@ -213,31 +209,26 @@ figure {
    Lists
    ========================================================================== */
 .content {
-  ul,
-  ol {
-    padding-left: 1.5em;
-  }
-
-  ul {
-    list-style-type: square;
-  }
-
-  li ul,
-  li ol {
-    margin: 0 1.375em;
-  }
-
   dl dd {
-    margin-left: 1.375em;
+    margin-left: 1.375em; // this should be explored and documented, then moved to Capital Framework
   }
 
   dt {
-    .webfont-demi();
+    .u-webfont-demi(); // this should be explored and documented, then moved to Capital Framework
   }
 }
 
 /* Color swatches for Identity/Color page
    ========================================================================== */
+
+.swatches-container__primary{
+  .grid_nested-col-group()
+}
+
+.swatches__primary {
+    .grid_column(9.40)
+}
+
 
 .swatch {
 
@@ -245,6 +236,10 @@ figure {
 
     &_field {
         height: 5em;
+    }
+
+    &__primary &_field {
+        height: 10em;
     }
 
     &_head {
@@ -263,7 +258,7 @@ figure {
     }
     th {
         padding-right: 0.25em;
-        .webfont-demi();
+        .u-webfont-demi();
         text-align: left;
     }
 
@@ -294,8 +289,9 @@ figure {
     }
 
     .swatch__primary {
-        .grid_column(6);
+       .grid_column(4);
     }
+
 }
 
 @colors: 'dark-green', 'green', 'green-80', 'green-60', 'green-40', 'green-20',
@@ -429,7 +425,7 @@ figure {
     }
   }
   th {
-    .webfont-demi;
+    .u-webfont-demi;
     font-size: .875em;
   }
   .cf-icon {
@@ -453,7 +449,7 @@ figure {
       border-right: none;
     }
     h6 {
-      .webfont-demi;
+      .u-webfont-demi;
       font-size: .875em;
       line-height: 1.325em;
       text-transform: capitalize;
@@ -496,18 +492,21 @@ figure {
 }
 
 .demi-ex {
-  p {
-    .webfont-demi;
+  p,
+  li {
+    .u-webfont-demi;
   }
 }
 .medium-ex {
-  p {
-    .webfont-medium;
+  p,
+  li {
+    .u-webfont-medium;
   }
 }
 .regular-ex {
-  p {
-    .webfont-regular;
+  p,
+  li {
+    .u-webfont-regular;
   }
 }
 
@@ -517,41 +516,41 @@ figure {
 
 #print-hierarchy-ex {
   .superheading {
-    .webfont-medium;
+    .u-webfont-medium;
     font-size: 60pt;
     line-height: 66pt;
   }
   h1 {
-    .webfont-regular;
+    .u-webfont-regular;
     font-size: 38pt;
     line-height: 40pt;
   }
   h2.h2-print-ex {
-    .webfont-regular;
+    .u-webfont-regular;
     border-bottom: none;
     margin-top: 0;
     font-size: 26pt;
     line-height: 28pt;
   }
   h3.h3-print-ex {
-    .webfont-demi;
+    .u-webfont-demi;
     font-size: 16pt;
     line-height: 18pt;
   }
   h4.h4-print-ex {
-    .webfont-medium;
+    .u-webfont-medium;
     font-size: 14pt;
     line-height: 16pt;
   }
   h5 {
-    .webfont-demi;
+    .u-webfont-demi;
     font-size: 10pt;
     line-height: 12pt;
     letter-spacing: 1pt;
     text-transform: uppercase;
   }
   h6 {
-    .webfont-medium;
+    .u-webfont-medium;
     font-size: 12pt;
     line-height: 14pt;
     letter-spacing: 0;
@@ -559,12 +558,12 @@ figure {
   }
 }
 p.print-subheading {
-  .webfont-regular;
+  .u-webfont-regular;
   font-size: 16pt;
   line-height: 20pt;
 }
 p.print-avenir-para {
-  .webfont-regular;
+  .u-webfont-regular;
   font-size: 11pt;
   line-height: 16pt;
 }
@@ -573,7 +572,7 @@ p.print-georgia-para {
   line-height: 16pt;
 }
 .print-ul ul li p {
-  .webfont-regular;
+  .u-webfont-regular;
   font-size: 11pt;
   line-height: 14pt;
   margin-bottom: 1em;
@@ -595,8 +594,8 @@ p.print-georgia-para {
     float: left;
     height: 4.0625em;
     max-height: 4.0625em;
-    background-color: #E7E7E6;
-    border-left: 1px solid #BABBBD;
+    background-color: @gray-10;
+    border-left: 1px solid @gray-40;
     width: 85%;
     padding: .75em 1em;
   }
@@ -616,16 +615,16 @@ p.print-georgia-para {
     display: block;
     max-height: 4.0625em;
     border-width: 0;
-    background-color: #E7E7E6;
+    background-color: @gray-10;
   }
   h4 {
     margin-bottom: .125em;
   }
   p {
     margin: 0;
-    font-size: 0.875em;
-    color: @gray-80;
-    .webfont-regular;
+    font-size: 1em;
+    color: @gray;
+    .u-webfont-regular;
   }
 }
 
@@ -654,7 +653,7 @@ h2 {
     float: right;
     font-size: .625em;
     padding-top: .7em;
-    .webfont-demi;
+    .u-webfont-demi;
   }
 }
 
@@ -750,7 +749,7 @@ ul {
     p {
         max-width: none;
         text-align: center;
-        .webfont-regular;
+        .u-webfont-regular;
         margin-top: 1.125em;
     }
 }

@@ -18,24 +18,26 @@ Expandables can be  used for displaying non-essential information on a page. The
 </div>
 
 <div class="content-50 content-last">
-  <h5 class="repo-list-header">Repository</h5>
+  <h5 class="repo-list-header">Source Code</h5>
   <ul class="repo-list">
     <li>
       <span class="cf-icon cf-icon-github"></span>
     </li>
     <li>
-      <a href="https://github.com/cfpb/cf-expandables"><h4>cf-expandables</h4></a>
-      <p>Expandables in the Capital Framework</p>
+      <a href="https://github.com/cfpb/capital-framework/blob/master/src/cf-expandables">
+        <h4>cf-expandables</h4>
+      </a>
+      <p>Expandables in Capital Framework</p>
     </li>
   </ul>
 </div>
 
-<h2 id="use">Use<span class="cf-code-link"><a href="https://cfpb.github.io/capital-framework/components/cf-expandables/">View code <span class="cf-icon cf-icon-external-link"></span></a></span></h2>
+## Use
 
 The `find` function will not discover information hidden by a collapsed expandable, so use good judgement in deciding which information to hide.
 Non-javaScript users should default to the expanded state. Otherwise, the default state (expanded or collapsed) will depend on the circumstance.
 
-<h2 id="style">Style</h2>
+## Style
 
 <h3 class="h4">Individual</h3>
 
@@ -50,23 +52,23 @@ The entire bar is actionable. The header should clearly indicate what the user w
 <div class="content-67 content-last">
 
 {::nomarkdown}
-<div class="expandable expandable__padded">
-    <button class="expandable_header expandable_target">
-        <span class="expandable_header-left expandable_label">
+<div class="o-expandable o-expandable__padded">
+    <button class="o-expandable_header o-expandable_target">
+        <span class="o-expandable_header-left o-expandable_label">
             Expandable Header
         </span>
-        <span class="expandable_header-right expandable_link">
-            <span class="expandable_cue-open">
+        <span class="o-expandable_header-right o-expandable_link">
+            <span class="o-expandable_cue-open">
                 Show
                 <span class="cf-icon cf-icon-plus-round"></span>
             </span>
-            <span class="expandable_cue-close">
+            <span class="o-expandable_cue-close">
                 Hide
                 <span class="cf-icon cf-icon-minus-round"></span>
             </span>
         </span>
     </button>
-    <div class="expandable_content">
+    <div class="o-expandable_content">
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing
             elit. Neque ipsa voluptatibus soluta nobis unde quisquam
@@ -91,24 +93,24 @@ When expandable sections are used in a group, they are stacked vertically, with 
 <div class="content-67 content-last">
 
 {::nomarkdown}
-<div class="expandable-group">
-    <div class="expandable expandable__padded">
-        <button class="expandable_header expandable_target" title="Expand content">
-            <span class="expandable_header-left expandable_label">
+<div class="o-expandable-group">
+    <div class="o-expandable o-expandable__padded">
+        <button class="o-expandable_header o-expandable_target" title="Expand content">
+            <span class="o-expandable_header-left o-expandable_label">
                 Expandable Header 1
             </span>
-            <span class="expandable_header-right expandable_link">
-                <span class="expandable_cue-open">
+            <span class="o-expandable_header-right o-expandable_link">
+                <span class="o-expandable_cue-open">
                     Show
                     <span class="cf-icon cf-icon-plus-round"></span>
                 </span>
-                <span class="expandable_cue-close">
+                <span class="o-expandable_cue-close">
                     Hide
                     <span class="cf-icon cf-icon-minus-round"></span>
                 </span>
             </span>
         </button>
-        <div class="expandable_content">
+        <div class="o-expandable_content">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing
                 elit. Neque ipsa voluptatibus soluta nobis unde quisquam
@@ -118,23 +120,23 @@ When expandable sections are used in a group, they are stacked vertically, with 
             </p>
         </div>
     </div>
-    <div class="expandable expandable__padded">
-        <button class="expandable_header expandable_target" title="Expand content">
-            <span class="expandable_header-left expandable_label">
+    <div class="o-expandable o-expandable__padded">
+        <button class="o-expandable_header o-expandable_target" title="Expand content">
+            <span class="o-expandable_header-left o-expandable_label">
                 Expandable Header 2
             </span>
-            <span class="expandable_header-right expandable_link">
-                <span class="expandable_cue-open">
+            <span class="o-expandable_header-right o-expandable_link">
+                <span class="o-expandable_cue-open">
                     Show
                     <span class="cf-icon cf-icon-plus-round"></span>
                 </span>
-                <span class="expandable_cue-close">
+                <span class="o-expandable_cue-close">
                     Hide
                     <span class="cf-icon cf-icon-minus-round"></span>
                 </span>
             </span>
         </button>
-        <div class="expandable_content">
+        <div class="o-expandable_content">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing
                 elit. Neque ipsa voluptatibus soluta nobis unde quisquam
@@ -144,23 +146,23 @@ When expandable sections are used in a group, they are stacked vertically, with 
             </p>
         </div>
     </div>
-    <div class="expandable expandable__padded">
-        <button class="expandable_header expandable_target" title="Expand content">
-            <span class="expandable_header-left expandable_label">
+    <div class="o-expandable o-expandable__padded">
+        <button class="o-expandable_header o-expandable_target" title="Expand content">
+            <span class="o-expandable_header-left o-expandable_label">
                 Expandable Header 3
             </span>
-            <span class="expandable_header-right expandable_link">
-                <span class="expandable_cue-open">
+            <span class="o-expandable_header-right o-expandable_link">
+                <span class="o-expandable_cue-open">
                     Show
                     <span class="cf-icon cf-icon-plus-round"></span>
                 </span>
-                <span class="expandable_cue-close">
+                <span class="o-expandable_cue-close">
                     Hide
                     <span class="cf-icon cf-icon-minus-round"></span>
                 </span>
             </span>
         </button>
-        <div class="expandable_content">
+        <div class="o-expandable_content">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing
                 elit. Neque ipsa voluptatibus soluta nobis unde quisquam
@@ -208,23 +210,23 @@ The default collapsed state should include the expand/collapse minicon within a 
 <div class="content-67 content-last">
 
 {::nomarkdown}
-<div class="expandable expandable__padded">
-    <button class="expandable_header expandable_target">
-        <span class="expandable_header-left expandable_label">
+<div class="o-expandable o-expandable__padded">
+    <button class="o-expandable_header o-expandable_target">
+        <span class="o-expandable_header-left o-expandable_label">
             Expandable Header
         </span>
-        <span class="expandable_header-right expandable_link">
-            <span class="expandable_cue-open">
+        <span class="o-expandable_header-right o-expandable_link">
+            <span class="o-expandable_cue-open">
                 Show
                 <span class="cf-icon cf-icon-plus-round"></span>
             </span>
-            <span class="expandable_cue-close">
+            <span class="o-expandable_cue-close">
                 Hide
                 <span class="cf-icon cf-icon-minus-round"></span>
             </span>
         </span>
     </button>
-    <div class="expandable_content" style="display: none;">
+    <div class="o-expandable_content">
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing
             elit. Neque ipsa voluptatibus soluta nobis unde quisquam
@@ -235,24 +237,24 @@ The default collapsed state should include the expand/collapse minicon within a 
     </div>
 </div>
 
-<div class="expandable-group">
-    <div class="expandable expandable__padded">
-        <button class="expandable_header expandable_target" title="Expand content">
-            <span class="expandable_header-left expandable_label">
+<div class="o-expandable-group">
+    <div class="o-expandable o-expandable__padded">
+        <button class="o-expandable_header o-expandable_target" title="Expand content">
+            <span class="o-expandable_header-left o-expandable_label">
                 Expandable Header 1
             </span>
-            <span class="expandable_header-right expandable_link">
-                <span class="expandable_cue-open">
+            <span class="o-expandable_header-right o-expandable_link">
+                <span class="o-expandable_cue-open">
                     Show
                     <span class="cf-icon cf-icon-plus-round"></span>
                 </span>
-                <span class="expandable_cue-close">
+                <span class="o-expandable_cue-close">
                     Hide
                     <span class="cf-icon cf-icon-minus-round"></span>
                 </span>
             </span>
         </button>
-        <div class="expandable_content">
+        <div class="o-expandable_content">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing
                 elit. Neque ipsa voluptatibus soluta nobis unde quisquam
@@ -262,23 +264,23 @@ The default collapsed state should include the expand/collapse minicon within a 
             </p>
         </div>
     </div>
-    <div class="expandable expandable__padded">
-        <button class="expandable_header expandable_target" title="Expand content">
-            <span class="expandable_header-left expandable_label">
+    <div class="o-expandable o-expandable__padded">
+        <button class="o-expandable_header o-expandable_target" title="Expand content">
+            <span class="o-expandable_header-left o-expandable_label">
                 Expandable Header 2
             </span>
-            <span class="expandable_header-right expandable_link">
-                <span class="expandable_cue-open">
+            <span class="o-expandable_header-right o-expandable_link">
+                <span class="o-expandable_cue-open">
                     Show
                     <span class="cf-icon cf-icon-plus-round"></span>
                 </span>
-                <span class="expandable_cue-close">
+                <span class="o-expandable_cue-close">
                     Hide
                     <span class="cf-icon cf-icon-minus-round"></span>
                 </span>
             </span>
         </button>
-        <div class="expandable_content">
+        <div class="o-expandable_content">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing
                 elit. Neque ipsa voluptatibus soluta nobis unde quisquam
@@ -288,23 +290,23 @@ The default collapsed state should include the expand/collapse minicon within a 
             </p>
         </div>
     </div>
-    <div class="expandable expandable__padded">
-        <button class="expandable_header expandable_target" title="Expand content">
-            <span class="expandable_header-left expandable_label">
+    <div class="o-expandable o-expandable__padded">
+        <button class="o-expandable_header o-expandable_target" title="Expand content">
+            <span class="o-expandable_header-left o-expandable_label">
                 Expandable Header 3
             </span>
-            <span class="expandable_header-right expandable_link">
-                <span class="expandable_cue-open">
+            <span class="o-expandable_header-right o-expandable_link">
+                <span class="o-expandable_cue-open">
                     Show
                     <span class="cf-icon cf-icon-plus-round"></span>
                 </span>
-                <span class="expandable_cue-close">
+                <span class="o-expandable_cue-close">
                     Hide
                     <span class="cf-icon cf-icon-minus-round"></span>
                 </span>
             </span>
         </button>
-        <div class="expandable_content">
+        <div class="o-expandable_content">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing
                 elit. Neque ipsa voluptatibus soluta nobis unde quisquam
@@ -332,23 +334,23 @@ Expandables can make use of an optional stroke under the title when expanded. Th
 <div class="content-67 content-last">
 
 {::nomarkdown}
-<div class="expandable expandable__padded expandable__expanded">
-    <button class="expandable_header expandable_target">
-        <span class="expandable_header-left expandable_label">
+<div class="o-expandable o-expandable__padded">
+    <button class="o-expandable_header o-expandable_target">
+        <span class="o-expandable_header-left o-expandable_label">
             Expandable Header
         </span>
-        <span class="expandable_header-right expandable_link">
-            <span class="expandable_cue-open">
+        <span class="o-expandable_header-right o-expandable_link">
+            <span class="o-expandable_cue-open">
                 Show
                 <span class="cf-icon cf-icon-plus-round"></span>
             </span>
-            <span class="expandable_cue-close">
+            <span class="o-expandable_cue-close">
                 Hide
                 <span class="cf-icon cf-icon-minus-round"></span>
             </span>
         </span>
     </button>
-    <div class="expandable_content">
+    <div class="o-expandable_content o-expandable_content__onload-open">
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing
             elit. Neque ipsa voluptatibus soluta nobis unde quisquam
@@ -359,24 +361,24 @@ Expandables can make use of an optional stroke under the title when expanded. Th
     </div>
 </div>
 
-<div class="expandable-group">
-    <div class="expandable expandable__padded expandable__expanded">
-        <button class="expandable_header expandable_target" title="Expand content">
-            <span class="expandable_header-left expandable_label">
+<div class="o-expandable-group">
+    <div class="o-expandable o-expandable__padded">
+        <button class="o-expandable_header o-expandable_target" title="Expand content">
+            <span class="o-expandable_header-left o-expandable_label">
                 Expandable Header 1
             </span>
-            <span class="expandable_header-right expandable_link">
-                <span class="expandable_cue-open">
+            <span class="o-expandable_header-right o-expandable_link">
+                <span class="o-expandable_cue-open">
                     Show
                     <span class="cf-icon cf-icon-plus-round"></span>
                 </span>
-                <span class="expandable_cue-close">
+                <span class="o-expandable_cue-close">
                     Hide
                     <span class="cf-icon cf-icon-minus-round"></span>
                 </span>
             </span>
         </button>
-        <div class="expandable_content">
+        <div class="o-expandable_content o-expandable_content__onload-open">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing
                 elit. Neque ipsa voluptatibus soluta nobis unde quisquam
@@ -386,23 +388,23 @@ Expandables can make use of an optional stroke under the title when expanded. Th
             </p>
         </div>
     </div>
-    <div class="expandable expandable__padded expandable__expanded">
-        <button class="expandable_header expandable_target" title="Expand content">
-            <span class="expandable_header-left expandable_label">
+    <div class="o-expandable o-expandable__padded">
+        <button class="o-expandable_header o-expandable_target" title="Expand content">
+            <span class="o-expandable_header-left o-expandable_label">
                 Expandable Header 2
             </span>
-            <span class="expandable_header-right expandable_link">
-                <span class="expandable_cue-open">
+            <span class="o-expandable_header-right o-expandable_link">
+                <span class="o-expandable_cue-open">
                     Show
                     <span class="cf-icon cf-icon-plus-round"></span>
                 </span>
-                <span class="expandable_cue-close">
+                <span class="o-expandable_cue-close">
                     Hide
                     <span class="cf-icon cf-icon-minus-round"></span>
                 </span>
             </span>
         </button>
-        <div class="expandable_content">
+        <div class="o-expandable_content">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing
                 elit. Neque ipsa voluptatibus soluta nobis unde quisquam
@@ -412,23 +414,23 @@ Expandables can make use of an optional stroke under the title when expanded. Th
             </p>
         </div>
     </div>
-    <div class="expandable expandable__padded expandable__expanded">
-        <button class="expandable_header expandable_target" title="Expand content">
-            <span class="expandable_header-left expandable_label">
+    <div class="o-expandable o-expandable__padded">
+        <button class="o-expandable_header o-expandable_target" title="Expand content">
+            <span class="o-expandable_header-left o-expandable_label">
                 Expandable Header 3
             </span>
-            <span class="expandable_header-right expandable_link">
-                <span class="expandable_cue-open">
+            <span class="o-expandable_header-right o-expandable_link">
+                <span class="o-expandable_cue-open">
                     Show
                     <span class="cf-icon cf-icon-plus-round"></span>
                 </span>
-                <span class="expandable_cue-close">
+                <span class="o-expandable_cue-close">
                     Hide
                     <span class="cf-icon cf-icon-minus-round"></span>
                 </span>
             </span>
         </button>
-        <div class="expandable_content">
+        <div class="o-expandable_content">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing
                 elit. Neque ipsa voluptatibus soluta nobis unde quisquam
@@ -456,24 +458,24 @@ In the default mode, users are able to have multiple sections of an expandable g
 <div class="content-67 content-last">
 
 {::nomarkdown}
-<div class="expandable-group">
-    <div class="expandable expandable__padded">
-        <button class="expandable_header expandable_target" title="Expand content">
-            <span class="expandable_header-left expandable_label">
+<div class="o-expandable-group">
+    <div class="o-expandable o-expandable__padded">
+        <button class="o-expandable_header o-expandable_target" title="Expand content">
+            <span class="o-expandable_header-left o-expandable_label">
                 Expandable Header 1
             </span>
-            <span class="expandable_header-right expandable_link">
-                <span class="expandable_cue-open">
+            <span class="o-expandable_header-right o-expandable_link">
+                <span class="o-expandable_cue-open">
                     Show
                     <span class="cf-icon cf-icon-plus-round"></span>
                 </span>
-                <span class="expandable_cue-close">
+                <span class="o-expandable_cue-close">
                     Hide
                     <span class="cf-icon cf-icon-minus-round"></span>
                 </span>
             </span>
         </button>
-        <div class="expandable_content">
+        <div class="o-expandable_content">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing
                 elit. Neque ipsa voluptatibus soluta nobis unde quisquam
@@ -483,23 +485,23 @@ In the default mode, users are able to have multiple sections of an expandable g
             </p>
         </div>
     </div>
-    <div class="expandable expandable__padded">
-        <button class="expandable_header expandable_target" title="Expand content">
-            <span class="expandable_header-left expandable_label">
+    <div class="o-expandable o-expandable__padded">
+        <button class="o-expandable_header o-expandable_target" title="Expand content">
+            <span class="o-expandable_header-left o-expandable_label">
                 Expandable Header 2
             </span>
-            <span class="expandable_header-right expandable_link">
-                <span class="expandable_cue-open">
+            <span class="o-expandable_header-right o-expandable_link">
+                <span class="o-expandable_cue-open">
                     Show
                     <span class="cf-icon cf-icon-plus-round"></span>
                 </span>
-                <span class="expandable_cue-close">
+                <span class="o-expandable_cue-close">
                     Hide
                     <span class="cf-icon cf-icon-minus-round"></span>
                 </span>
             </span>
         </button>
-        <div class="expandable_content">
+        <div class="o-expandable_content">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing
                 elit. Neque ipsa voluptatibus soluta nobis unde quisquam
@@ -509,23 +511,23 @@ In the default mode, users are able to have multiple sections of an expandable g
             </p>
         </div>
     </div>
-    <div class="expandable expandable__padded">
-        <button class="expandable_header expandable_target" title="Expand content">
-            <span class="expandable_header-left expandable_label">
+    <div class="o-expandable o-expandable__padded">
+        <button class="o-expandable_header o-expandable_target" title="Expand content">
+            <span class="o-expandable_header-left o-expandable_label">
                 Expandable Header 3
             </span>
-            <span class="expandable_header-right expandable_link">
-                <span class="expandable_cue-open">
+            <span class="o-expandable_header-right o-expandable_link">
+                <span class="o-expandable_cue-open">
                     Show
                     <span class="cf-icon cf-icon-plus-round"></span>
                 </span>
-                <span class="expandable_cue-close">
+                <span class="o-expandable_cue-close">
                     Hide
                     <span class="cf-icon cf-icon-minus-round"></span>
                 </span>
             </span>
         </button>
-        <div class="expandable_content">
+        <div class="o-expandable_content">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing
                 elit. Neque ipsa voluptatibus soluta nobis unde quisquam
@@ -555,24 +557,24 @@ Add the `data-accordion="true"` attribute to the expandable group to activate th
 <div class="content-67 content-last">
 
 {::nomarkdown}
-<div class="expandable-group" data-accordion="true">
-    <div class="expandable expandable__padded">
-        <button class="expandable_header expandable_target" title="Expand content">
-            <span class="expandable_header-left expandable_label">
+<div class="o-expandable-group o-expandable-group__accordion">
+    <div class="o-expandable o-expandable__padded">
+        <button class="o-expandable_header o-expandable_target" title="Expand content">
+            <span class="o-expandable_header-left o-expandable_label">
                 Expandable Header 1
             </span>
-            <span class="expandable_header-right expandable_link">
-                <span class="expandable_cue-open">
+            <span class="o-expandable_header-right o-expandable_link">
+                <span class="o-expandable_cue-open">
                     Show
                     <span class="cf-icon cf-icon-plus-round"></span>
                 </span>
-                <span class="expandable_cue-close">
+                <span class="o-expandable_cue-close">
                     Hide
                     <span class="cf-icon cf-icon-minus-round"></span>
                 </span>
             </span>
         </button>
-        <div class="expandable_content">
+        <div class="o-expandable_content">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing
                 elit. Neque ipsa voluptatibus soluta nobis unde quisquam
@@ -582,23 +584,23 @@ Add the `data-accordion="true"` attribute to the expandable group to activate th
             </p>
         </div>
     </div>
-    <div class="expandable expandable__padded">
-        <button class="expandable_header expandable_target" title="Expand content">
-            <span class="expandable_header-left expandable_label">
+    <div class="o-expandable o-expandable__padded">
+        <button class="o-expandable_header o-expandable_target" title="Expand content">
+            <span class="o-expandable_header-left o-expandable_label">
                 Expandable Header 2
             </span>
-            <span class="expandable_header-right expandable_link">
-                <span class="expandable_cue-open">
+            <span class="o-expandable_header-right o-expandable_link">
+                <span class="o-expandable_cue-open">
                     Show
                     <span class="cf-icon cf-icon-plus-round"></span>
                 </span>
-                <span class="expandable_cue-close">
+                <span class="o-expandable_cue-close">
                     Hide
                     <span class="cf-icon cf-icon-minus-round"></span>
                 </span>
             </span>
         </button>
-        <div class="expandable_content">
+        <div class="o-expandable_content">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing
                 elit. Neque ipsa voluptatibus soluta nobis unde quisquam
@@ -608,23 +610,23 @@ Add the `data-accordion="true"` attribute to the expandable group to activate th
             </p>
         </div>
     </div>
-    <div class="expandable expandable__padded">
-        <button class="expandable_header expandable_target" title="Expand content">
-            <span class="expandable_header-left expandable_label">
+    <div class="o-expandable o-expandable__padded">
+        <button class="o-expandable_header o-expandable_target" title="Expand content">
+            <span class="o-expandable_header-left o-expandable_label">
                 Expandable Header 3
             </span>
-            <span class="expandable_header-right expandable_link">
-                <span class="expandable_cue-open">
+            <span class="o-expandable_header-right o-expandable_link">
+                <span class="o-expandable_cue-open">
                     Show
                     <span class="cf-icon cf-icon-plus-round"></span>
                 </span>
-                <span class="expandable_cue-close">
+                <span class="o-expandable_cue-close">
                     Hide
                     <span class="cf-icon cf-icon-minus-round"></span>
                 </span>
             </span>
         </button>
-        <div class="expandable_content">
+        <div class="o-expandable_content">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing
                 elit. Neque ipsa voluptatibus soluta nobis unde quisquam
